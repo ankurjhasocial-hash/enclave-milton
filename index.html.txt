@@ -1,0 +1,1576 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>The Enclave — Freehold Townhomes in Milton, Ontario | Book a Private Showing</title>
+<meta name="description" content="The Enclave Milton — Freehold Townhomes from $599,990. No monthly fees. HST included. Village, Park & River Collections. Book your private showing today.">
+
+<!-- Google Fonts -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<style>
+  /* ============================================================
+     RESET & BASE
+  ============================================================ */
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+  :root {
+    --red:      #C0392B;
+    --red-dark: #922B21;
+    --red-lite: #FADBD8;
+    --navy:     #1A1A2E;
+    --charcoal: #2C2C3E;
+    --mid:      #6B7280;
+    --light:    #F4F5F7;
+    --white:    #FFFFFF;
+    --gold:     #D4AC0D;
+    --border:   #E5E7EB;
+
+    --font-display: 'Playfair Display', Georgia, serif;
+    --font-body:    'Inter', system-ui, sans-serif;
+
+    --max-w: 1140px;
+    --radius: 10px;
+    --shadow: 0 4px 24px rgba(0,0,0,0.10);
+    --shadow-lg: 0 12px 48px rgba(0,0,0,0.18);
+  }
+
+  html { scroll-behavior: smooth; }
+
+  body {
+    font-family: var(--font-body);
+    color: var(--charcoal);
+    background: var(--white);
+    line-height: 1.6;
+    font-size: 16px;
+  }
+
+  img { display: block; max-width: 100%; }
+  a   { color: inherit; text-decoration: none; }
+
+  .container {
+    width: 100%;
+    max-width: var(--max-w);
+    margin: 0 auto;
+    padding: 0 24px;
+  }
+
+  /* ============================================================
+     TOP BAR
+  ============================================================ */
+  .topbar {
+    background: var(--navy);
+    color: var(--white);
+    text-align: center;
+    font-size: 13px;
+    font-weight: 500;
+    padding: 10px 20px;
+    letter-spacing: 0.03em;
+  }
+  .topbar span { color: #F4A67A; font-weight: 600; }
+
+  /* ============================================================
+     NAVIGATION
+  ============================================================ */
+  nav {
+    background: var(--white);
+    border-bottom: 1px solid var(--border);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.07);
+  }
+  .nav-inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 64px;
+  }
+  .nav-logo {
+    display: flex;
+    flex-direction: column;
+    line-height: 1.1;
+  }
+  .nav-logo strong {
+    font-family: var(--font-display);
+    font-size: 20px;
+    color: var(--navy);
+  }
+  .nav-logo span {
+    font-size: 10px;
+    color: var(--mid);
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+  }
+  .nav-cta {
+    background: var(--red);
+    color: var(--white);
+    padding: 10px 22px;
+    border-radius: 6px;
+    font-size: 14px;
+    font-weight: 600;
+    transition: background 0.2s;
+    white-space: nowrap;
+  }
+  .nav-cta:hover { background: var(--red-dark); }
+  .nav-phone {
+    font-size: 15px;
+    font-weight: 600;
+    color: var(--navy);
+    display: flex;
+    align-items: center;
+    gap: 6px;
+  }
+  .nav-phone::before { content: '📞'; font-size: 14px; }
+
+  /* ============================================================
+     HERO
+  ============================================================ */
+  .hero {
+    background: linear-gradient(135deg, var(--navy) 0%, #16213E 50%, #0F3460 100%);
+    color: var(--white);
+    padding: 80px 0 60px;
+    position: relative;
+    overflow: hidden;
+  }
+  .hero::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: radial-gradient(ellipse at 70% 50%, rgba(192,57,43,0.18) 0%, transparent 65%);
+  }
+  .hero-inner {
+    display: grid;
+    grid-template-columns: 1fr 420px;
+    gap: 60px;
+    align-items: center;
+    position: relative;
+  }
+  .hero-eyebrow {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    background: rgba(192,57,43,0.25);
+    border: 1px solid rgba(192,57,43,0.5);
+    color: #F4A67A;
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    padding: 6px 14px;
+    border-radius: 4px;
+    margin-bottom: 20px;
+  }
+  .hero-eyebrow::before { content: '★'; font-size: 10px; }
+  .hero h1 {
+    font-family: var(--font-display);
+    font-size: clamp(38px, 5vw, 58px);
+    font-weight: 900;
+    line-height: 1.1;
+    margin-bottom: 8px;
+  }
+  .hero h1 em {
+    font-style: normal;
+    color: var(--red);
+    -webkit-text-stroke: 1px rgba(192,57,43,0.4);
+  }
+  .hero-sub {
+    font-size: 17px;
+    color: rgba(255,255,255,0.75);
+    margin-bottom: 28px;
+    font-weight: 300;
+    max-width: 520px;
+  }
+  .hero-badges {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 32px;
+  }
+  .badge {
+    background: rgba(255,255,255,0.1);
+    border: 1px solid rgba(255,255,255,0.2);
+    color: var(--white);
+    font-size: 12px;
+    font-weight: 600;
+    padding: 6px 14px;
+    border-radius: 20px;
+    letter-spacing: 0.04em;
+  }
+  .hero-prices {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+  }
+  .price-pill {
+    background: rgba(255,255,255,0.07);
+    border: 1px solid rgba(255,255,255,0.15);
+    border-radius: 10px;
+    padding: 14px 18px;
+    min-width: 130px;
+  }
+  .price-pill-label {
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: #F4A67A;
+    margin-bottom: 4px;
+  }
+  .price-pill-name {
+    font-size: 13px;
+    color: rgba(255,255,255,0.7);
+    margin-bottom: 2px;
+  }
+  .price-pill-price {
+    font-size: 20px;
+    font-weight: 700;
+    color: var(--white);
+  }
+
+  /* ============================================================
+     HERO FORM CARD
+  ============================================================ */
+  .hero-form-card {
+    background: var(--white);
+    border-radius: 14px;
+    padding: 32px 28px;
+    box-shadow: var(--shadow-lg);
+    color: var(--charcoal);
+    flex-shrink: 0;
+  }
+  .form-card-title {
+    font-family: var(--font-display);
+    font-size: 22px;
+    font-weight: 700;
+    color: var(--navy);
+    margin-bottom: 4px;
+    line-height: 1.2;
+  }
+  .form-card-sub {
+    font-size: 13px;
+    color: var(--mid);
+    margin-bottom: 22px;
+  }
+  .form-card-sub strong { color: var(--red); }
+
+  .form-group {
+    margin-bottom: 14px;
+  }
+  .form-group label {
+    display: block;
+    font-size: 12px;
+    font-weight: 600;
+    color: var(--charcoal);
+    margin-bottom: 5px;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+  }
+  .form-group input,
+  .form-group select {
+    width: 100%;
+    padding: 11px 14px;
+    border: 1.5px solid var(--border);
+    border-radius: 7px;
+    font-size: 15px;
+    font-family: var(--font-body);
+    color: var(--charcoal);
+    background: var(--white);
+    transition: border-color 0.2s, box-shadow 0.2s;
+    appearance: none;
+    -webkit-appearance: none;
+  }
+  .form-group input:focus,
+  .form-group select:focus {
+    outline: none;
+    border-color: var(--red);
+    box-shadow: 0 0 0 3px rgba(192,57,43,0.12);
+  }
+  .form-group select {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8' viewBox='0 0 12 8'%3E%3Cpath fill='%236B7280' d='M1 1l5 5 5-5'/%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position: right 14px center;
+    padding-right: 36px;
+  }
+
+  .submit-btn {
+    width: 100%;
+    background: var(--red);
+    color: var(--white);
+    border: none;
+    border-radius: 8px;
+    padding: 14px;
+    font-size: 16px;
+    font-weight: 700;
+    font-family: var(--font-body);
+    cursor: pointer;
+    transition: background 0.2s, transform 0.1s;
+    letter-spacing: 0.02em;
+    margin-top: 4px;
+  }
+  .submit-btn:hover { background: var(--red-dark); transform: translateY(-1px); }
+  .submit-btn:active { transform: translateY(0); }
+  .submit-btn:disabled { background: #ccc; cursor: not-allowed; transform: none; }
+
+  .form-privacy {
+    text-align: center;
+    font-size: 11px;
+    color: var(--mid);
+    margin-top: 10px;
+  }
+  .form-privacy::before { content: '🔒  '; }
+
+  /* Success / Error states */
+  .form-success {
+    display: none;
+    text-align: center;
+    padding: 20px 10px;
+  }
+  .form-success .check { font-size: 48px; margin-bottom: 12px; }
+  .form-success h3 {
+    font-family: var(--font-display);
+    font-size: 20px;
+    color: var(--navy);
+    margin-bottom: 8px;
+  }
+  .form-success p { font-size: 14px; color: var(--mid); }
+
+  .form-error-msg {
+    display: none;
+    background: #FFF5F5;
+    border: 1px solid #FECACA;
+    color: #B91C1C;
+    font-size: 13px;
+    padding: 10px 14px;
+    border-radius: 6px;
+    margin-top: 10px;
+  }
+
+  /* ============================================================
+     STATS BAR
+  ============================================================ */
+  .stats-bar {
+    background: var(--red);
+    color: var(--white);
+    padding: 28px 0;
+  }
+  .stats-inner {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px;
+    text-align: center;
+  }
+  .stat-item {}
+  .stat-num {
+    font-family: var(--font-display);
+    font-size: 32px;
+    font-weight: 900;
+    line-height: 1;
+    margin-bottom: 4px;
+  }
+  .stat-label {
+    font-size: 12px;
+    font-weight: 500;
+    opacity: 0.85;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+  }
+
+  /* ============================================================
+     COLLECTIONS
+  ============================================================ */
+  .section { padding: 80px 0; }
+  .section-eyebrow {
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    color: var(--red);
+    margin-bottom: 10px;
+  }
+  .section-title {
+    font-family: var(--font-display);
+    font-size: clamp(28px, 4vw, 40px);
+    font-weight: 900;
+    color: var(--navy);
+    line-height: 1.15;
+    margin-bottom: 14px;
+  }
+  .section-desc {
+    font-size: 16px;
+    color: var(--mid);
+    max-width: 600px;
+    margin-bottom: 48px;
+  }
+
+  .collections-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+  }
+  .collection-card {
+    border: 1.5px solid var(--border);
+    border-radius: var(--radius);
+    overflow: hidden;
+    transition: box-shadow 0.2s, transform 0.2s;
+  }
+  .collection-card:hover {
+    box-shadow: var(--shadow-lg);
+    transform: translateY(-4px);
+  }
+  .collection-header {
+    padding: 22px 22px 16px;
+    position: relative;
+  }
+  .collection-header.village { background: linear-gradient(135deg, #5D4E37, #8B6914); }
+  .collection-header.park    { background: linear-gradient(135deg, #1A4731, #276749); }
+  .collection-header.river   { background: linear-gradient(135deg, #7B3F00, #A0522D); }
+  .collection-dot {
+    width: 12px; height: 12px;
+    border-radius: 50%;
+    background: rgba(255,255,255,0.5);
+    display: inline-block;
+    margin-bottom: 8px;
+  }
+  .collection-name {
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: rgba(255,255,255,0.7);
+    margin-bottom: 2px;
+  }
+  .collection-type {
+    font-family: var(--font-display);
+    font-size: 22px;
+    font-weight: 700;
+    color: var(--white);
+    margin-bottom: 6px;
+  }
+  .collection-from { font-size: 24px; font-weight: 800; color: var(--white); }
+  .collection-from span { font-size: 13px; font-weight: 400; opacity: 0.8; display: block; }
+
+  .collection-body { padding: 20px 22px; }
+  .collection-detail {
+    font-size: 13px;
+    color: var(--mid);
+    margin-bottom: 14px;
+  }
+  .collection-detail strong { color: var(--charcoal); }
+  .collection-features {
+    list-style: none;
+    margin-bottom: 20px;
+  }
+  .collection-features li {
+    font-size: 13px;
+    color: var(--charcoal);
+    padding: 5px 0;
+    border-bottom: 1px solid var(--border);
+    display: flex;
+    gap: 8px;
+  }
+  .collection-features li::before { content: '✓'; color: var(--red); font-weight: 700; flex-shrink: 0; }
+  .collection-features li:last-child { border-bottom: none; }
+  .card-btn {
+    display: block;
+    text-align: center;
+    background: var(--light);
+    color: var(--navy);
+    font-size: 13px;
+    font-weight: 600;
+    padding: 10px;
+    border-radius: 6px;
+    transition: background 0.2s, color 0.2s;
+    cursor: pointer;
+    border: none;
+    width: 100%;
+    font-family: var(--font-body);
+  }
+  .card-btn:hover { background: var(--red); color: var(--white); }
+
+  /* ============================================================
+     FEATURES STRIP
+  ============================================================ */
+  .features-strip { background: var(--light); padding: 60px 0; }
+  .features-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 24px;
+  }
+  .feature-item {
+    background: var(--white);
+    border-radius: var(--radius);
+    padding: 24px 20px;
+    text-align: center;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+  }
+  .feature-icon { font-size: 32px; margin-bottom: 12px; }
+  .feature-title {
+    font-weight: 700;
+    font-size: 14px;
+    color: var(--navy);
+    margin-bottom: 6px;
+  }
+  .feature-desc { font-size: 13px; color: var(--mid); }
+
+  /* ============================================================
+     INTERIOR SHOWCASE
+  ============================================================ */
+  .interior-section { padding: 80px 0; background: var(--navy); }
+  .interior-section .section-title { color: var(--white); }
+  .interior-section .section-desc { color: rgba(255,255,255,0.6); }
+  .interior-section .section-eyebrow { color: #F4A67A; }
+  .rooms-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+  .room-card {
+    border-radius: 10px;
+    overflow: hidden;
+    background: var(--charcoal);
+    position: relative;
+  }
+  .room-placeholder {
+    height: 220px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 48px;
+    position: relative;
+  }
+  .room-placeholder.living  { background: linear-gradient(135deg, #2d2d2d 0%, #3d3d3d 100%); }
+  .room-placeholder.kitchen { background: linear-gradient(135deg, #f0f0f0 0%, #e0e0e0 100%); color: #333; }
+  .room-placeholder.bath    { background: linear-gradient(135deg, #d4d4d4 0%, #c8c8c8 100%); color: #555; }
+  .room-placeholder.bedroom { background: linear-gradient(135deg, #e8e0d0 0%, #d8d0c0 100%); color: #555; }
+  .room-label {
+    padding: 14px 16px;
+    background: rgba(26,26,46,0.95);
+  }
+  .room-label strong { display: block; font-size: 14px; color: var(--white); margin-bottom: 2px; }
+  .room-label span { font-size: 12px; color: rgba(255,255,255,0.55); }
+
+  /* ============================================================
+     DEPOSIT SECTION
+  ============================================================ */
+  .deposit-section { padding: 80px 0; }
+  .deposit-inner {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+    align-items: start;
+  }
+  .deposit-steps { margin-top: 24px; }
+  .deposit-step {
+    display: flex;
+    gap: 16px;
+    margin-bottom: 20px;
+    align-items: flex-start;
+  }
+  .step-num {
+    width: 34px;
+    height: 34px;
+    border-radius: 50%;
+    background: var(--red);
+    color: var(--white);
+    font-weight: 700;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    margin-top: 2px;
+  }
+  .step-body strong { display: block; font-size: 15px; color: var(--navy); margin-bottom: 2px; }
+  .step-body span { font-size: 13px; color: var(--mid); }
+  .deposit-note {
+    font-size: 12px;
+    color: var(--mid);
+    margin-top: 12px;
+    font-style: italic;
+  }
+
+  .why-box {
+    background: var(--light);
+    border-radius: var(--radius);
+    padding: 32px;
+  }
+  .why-title {
+    font-family: var(--font-display);
+    font-size: 22px;
+    color: var(--navy);
+    margin-bottom: 20px;
+  }
+  .why-item {
+    display: flex;
+    gap: 12px;
+    margin-bottom: 16px;
+    align-items: flex-start;
+  }
+  .why-icon { font-size: 20px; flex-shrink: 0; margin-top: 1px; }
+  .why-item strong { display: block; font-size: 14px; color: var(--navy); margin-bottom: 2px; }
+  .why-item span { font-size: 13px; color: var(--mid); }
+
+  /* ============================================================
+     LOCATION
+  ============================================================ */
+  .location-section { padding: 80px 0; background: var(--light); }
+  .location-inner {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+    align-items: center;
+  }
+  .location-map {
+    background: #E8EFF5;
+    border-radius: var(--radius);
+    height: 340px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    border: 2px dashed #CBD5E1;
+    color: var(--mid);
+    font-size: 14px;
+    text-align: center;
+    padding: 20px;
+  }
+  .location-map-icon { font-size: 42px; }
+  .location-map a {
+    color: var(--red);
+    font-weight: 600;
+    text-decoration: underline;
+  }
+  .location-list { list-style: none; margin-top: 20px; }
+  .location-list li {
+    display: flex;
+    gap: 10px;
+    align-items: flex-start;
+    padding: 12px 0;
+    border-bottom: 1px solid var(--border);
+    font-size: 14px;
+  }
+  .location-list li:last-child { border-bottom: none; }
+  .loc-icon { font-size: 18px; flex-shrink: 0; }
+  .loc-label strong { display: block; color: var(--navy); font-size: 14px; margin-bottom: 1px; }
+  .loc-label span { color: var(--mid); font-size: 13px; }
+
+  /* ============================================================
+     BOTTOM FORM SECTION
+  ============================================================ */
+  .bottom-form-section {
+    padding: 80px 0;
+    background: linear-gradient(135deg, var(--navy) 0%, #16213E 100%);
+    color: var(--white);
+  }
+  .bottom-form-inner {
+    display: grid;
+    grid-template-columns: 1fr 480px;
+    gap: 60px;
+    align-items: center;
+  }
+  .bottom-form-left .section-title { color: var(--white); }
+  .bottom-form-left .section-desc  { color: rgba(255,255,255,0.65); margin-bottom: 30px; }
+  .urgency-badges {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+  .urgency-badge {
+    display: flex;
+    gap: 12px;
+    align-items: center;
+    background: rgba(255,255,255,0.07);
+    border-radius: 8px;
+    padding: 12px 16px;
+  }
+  .urgency-badge-icon { font-size: 22px; flex-shrink: 0; }
+  .urgency-badge strong { display: block; font-size: 14px; color: var(--white); }
+  .urgency-badge span { font-size: 12px; color: rgba(255,255,255,0.55); }
+
+  .bottom-form-card {
+    background: var(--white);
+    border-radius: 14px;
+    padding: 36px 30px;
+    color: var(--charcoal);
+    box-shadow: var(--shadow-lg);
+  }
+
+  /* ============================================================
+     AGENT SECTION
+  ============================================================ */
+  .agent-section { padding: 60px 0; background: var(--white); }
+  .agent-card {
+    background: var(--navy);
+    border-radius: 16px;
+    padding: 40px;
+    display: flex;
+    gap: 40px;
+    align-items: center;
+    color: var(--white);
+  }
+  .agent-avatar {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, var(--red), var(--red-dark));
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: var(--font-display);
+    font-size: 36px;
+    font-weight: 900;
+    color: var(--white);
+    flex-shrink: 0;
+    border: 3px solid rgba(255,255,255,0.2);
+  }
+  .agent-info { flex: 1; }
+  .agent-name {
+    font-family: var(--font-display);
+    font-size: 26px;
+    font-weight: 700;
+    margin-bottom: 4px;
+  }
+  .agent-title { font-size: 13px; color: rgba(255,255,255,0.6); margin-bottom: 16px; letter-spacing: 0.05em; text-transform: uppercase; }
+  .agent-contacts { display: flex; gap: 16px; flex-wrap: wrap; }
+  .agent-contact {
+    background: rgba(255,255,255,0.1);
+    border-radius: 6px;
+    padding: 8px 16px;
+    font-size: 14px;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+  .agent-cta {
+    background: var(--red);
+    color: var(--white);
+    padding: 14px 28px;
+    border-radius: 8px;
+    font-size: 15px;
+    font-weight: 700;
+    flex-shrink: 0;
+    transition: background 0.2s;
+    cursor: pointer;
+    border: none;
+    font-family: var(--font-body);
+  }
+  .agent-cta:hover { background: var(--red-dark); }
+
+  /* ============================================================
+     DISCLAIMER
+  ============================================================ */
+  .disclaimer {
+    background: var(--charcoal);
+    color: rgba(255,255,255,0.5);
+    font-size: 11px;
+    line-height: 1.7;
+    padding: 24px 0;
+    text-align: center;
+  }
+  .disclaimer p { max-width: 900px; margin: 0 auto; padding: 0 20px; }
+
+  /* ============================================================
+     FOOTER
+  ============================================================ */
+  footer {
+    background: var(--navy);
+    color: rgba(255,255,255,0.7);
+    padding: 30px 0;
+    text-align: center;
+    font-size: 13px;
+  }
+  footer strong { color: var(--white); }
+
+  /* ============================================================
+     SCROLL-TO-FORM BUTTON (floating)
+  ============================================================ */
+  .float-btn {
+    position: fixed;
+    bottom: 24px;
+    right: 24px;
+    background: var(--red);
+    color: var(--white);
+    padding: 14px 22px;
+    border-radius: 50px;
+    font-size: 14px;
+    font-weight: 700;
+    box-shadow: 0 6px 24px rgba(192,57,43,0.4);
+    cursor: pointer;
+    border: none;
+    font-family: var(--font-body);
+    transition: transform 0.2s, box-shadow 0.2s;
+    z-index: 200;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    animation: pulse 2.5s ease-in-out infinite;
+  }
+  .float-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 10px 32px rgba(192,57,43,0.5);
+    animation: none;
+  }
+  @keyframes pulse {
+    0%, 100% { box-shadow: 0 6px 24px rgba(192,57,43,0.4); }
+    50%       { box-shadow: 0 6px 32px rgba(192,57,43,0.65); }
+  }
+
+  /* ============================================================
+     RESPONSIVE
+  ============================================================ */
+  @media (max-width: 900px) {
+    .hero-inner         { grid-template-columns: 1fr; }
+    .hero-form-card     { width: 100%; max-width: 480px; }
+    .collections-grid   { grid-template-columns: 1fr; }
+    .features-grid      { grid-template-columns: repeat(2, 1fr); }
+    .deposit-inner      { grid-template-columns: 1fr; }
+    .location-inner     { grid-template-columns: 1fr; }
+    .bottom-form-inner  { grid-template-columns: 1fr; }
+    .bottom-form-card   { width: 100%; max-width: 480px; }
+    .rooms-grid         { grid-template-columns: 1fr; }
+    .agent-card         { flex-direction: column; text-align: center; }
+    .agent-contacts     { justify-content: center; }
+    .nav-phone          { display: none; }
+  }
+  @media (max-width: 600px) {
+    .features-grid  { grid-template-columns: 1fr; }
+    .hero-prices    { flex-direction: column; }
+    .float-btn span { display: none; }
+    .collections-grid { grid-template-columns: 1fr; }
+  }
+</style>
+</head>
+<body>
+
+<!-- ============================================================
+     TOP BAR
+============================================================ -->
+<div class="topbar">
+  🏡 <span>LIMITED RELEASE</span> — Freehold Townhomes in Milton from $599,990 · HST Included · No Monthly Fees
+</div>
+
+<!-- ============================================================
+     NAVIGATION
+============================================================ -->
+<nav>
+  <div class="container nav-inner">
+    <div class="nav-logo">
+      <strong>The Enclave</strong>
+      <span>Milton, Ontario</span>
+    </div>
+    <a href="tel:4165602182" class="nav-phone">416-560-2182</a>
+    <button class="nav-cta" onclick="scrollToForm('hero-form')">Book a Showing</button>
+  </div>
+</nav>
+
+<!-- ============================================================
+     HERO
+============================================================ -->
+<section class="hero">
+  <div class="container hero-inner">
+    <div class="hero-content">
+      <div class="hero-eyebrow">A Prime Milton Location</div>
+      <h1>The <em>Enclave</em><br>Milton</h1>
+      <p class="hero-sub">Freehold Townhomes — three collections, one community. Own the land, skip the fees. Closing 2027.</p>
+      <div class="hero-badges">
+        <span class="badge">✓ No Monthly Fees</span>
+        <span class="badge">✓ HST Included</span>
+        <span class="badge">✓ Tarion Warranty</span>
+        <span class="badge">✓ BILD Member 35 Yrs</span>
+        <span class="badge">✓ 4 Appliances Included</span>
+      </div>
+      <div class="hero-prices">
+        <div class="price-pill">
+          <div class="price-pill-label">Village</div>
+          <div class="price-pill-name">Urban Towns</div>
+          <div class="price-pill-price">$599,990</div>
+        </div>
+        <div class="price-pill">
+          <div class="price-pill-label">Park</div>
+          <div class="price-pill-name">2 &amp; 3 Storey</div>
+          <div class="price-pill-price">$705,990</div>
+        </div>
+        <div class="price-pill">
+          <div class="price-pill-label">River</div>
+          <div class="price-pill-name">Promenade</div>
+          <div class="price-pill-price">$719,990</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- HERO BOOKING FORM -->
+    <div class="hero-form-card" id="hero-form">
+      <div class="form-card-title">Book a Private Showing</div>
+      <p class="form-card-sub">Best lots go fast. <strong>Secure yours today</strong> — no obligation.</p>
+
+      <div id="heroFormWrap">
+        <form id="heroBookingForm" onsubmit="submitForm(event, 'heroBookingForm', 'heroSuccess', 'heroError')">
+          <div class="form-group">
+            <label for="h_name">Full Name *</label>
+            <input type="text" id="h_name" name="name" placeholder="Your full name" required autocomplete="name">
+          </div>
+          <div class="form-group">
+            <label for="h_email">Email Address *</label>
+            <input type="email" id="h_email" name="email" placeholder="you@email.com" required autocomplete="email">
+          </div>
+          <div class="form-group">
+            <label for="h_phone">Phone Number *</label>
+            <input type="tel" id="h_phone" name="phone" placeholder="416-000-0000" required autocomplete="tel">
+          </div>
+          <div class="form-group">
+            <label for="h_collection">Interested In</label>
+            <select id="h_collection" name="collection">
+              <option value="">— Select a Collection —</option>
+              <option>Village Collection (from $599,990)</option>
+              <option>Park Collection — 2-Storey (from $705,990)</option>
+              <option>Park Collection — 3-Storey (from $779,990)</option>
+              <option>River Collection (from $719,990)</option>
+              <option>Not Sure Yet — Show Me Everything</option>
+            </select>
+          </div>
+          <button type="submit" class="submit-btn" id="heroBtn">Book My Private Showing →</button>
+          <p class="form-privacy">Your info is kept confidential. No spam, ever.</p>
+          <div class="form-error-msg" id="heroError">Something went wrong. Please try again or call 416-560-2182.</div>
+        </form>
+        <div class="form-success" id="heroSuccess">
+          <div class="check">✅</div>
+          <h3>You're booked in!</h3>
+          <p>Ankur will reach out within a few hours to confirm your private showing time.</p>
+          <p style="margin-top:8px; font-weight:600; color:#C0392B;">416-560-2182</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     STATS BAR
+============================================================ -->
+<div class="stats-bar">
+  <div class="container stats-inner">
+    <div class="stat-item">
+      <div class="stat-num">17</div>
+      <div class="stat-label">Floor Plans Available</div>
+    </div>
+    <div class="stat-item">
+      <div class="stat-num">953–2,599</div>
+      <div class="stat-label">Sq Ft Range</div>
+    </div>
+    <div class="stat-item">
+      <div class="stat-num">2027</div>
+      <div class="stat-label">Closing Year</div>
+    </div>
+    <div class="stat-item">
+      <div class="stat-num">$0</div>
+      <div class="stat-label">Monthly Fees</div>
+    </div>
+    <div class="stat-item">
+      <div class="stat-num">4</div>
+      <div class="stat-label">Free Appliances</div>
+    </div>
+  </div>
+</div>
+
+<!-- ============================================================
+     COLLECTIONS
+============================================================ -->
+<section class="section" id="collections">
+  <div class="container">
+    <div class="section-eyebrow">Three Collections</div>
+    <h2 class="section-title">Find the Home That Fits Your Life</h2>
+    <p class="section-desc">Every home is freehold — you own the land. Every price includes HST. Choose by size, style, and budget.</p>
+
+    <div class="collections-grid">
+
+      <!-- Village -->
+      <div class="collection-card">
+        <div class="collection-header village">
+          <div class="collection-dot"></div>
+          <div class="collection-name">Village Collection</div>
+          <div class="collection-type">Urban Townhomes</div>
+          <div class="collection-from">$599,990 <span>Starting price · HST in</span></div>
+        </div>
+        <div class="collection-body">
+          <p class="collection-detail"><strong>Blocks 125 &amp; 128</strong> · Closing Sep–Oct 2027 · 953–1,732 sq ft</p>
+          <ul class="collection-features">
+            <li>Ground-level garage · bright living above</li>
+            <li>9' main-floor ceilings</li>
+            <li>6 models from 2 Bed to 3 Bed + Den</li>
+            <li>End &amp; corner units with extra windows</li>
+            <li>Ideal for first-time buyers &amp; investors</li>
+          </ul>
+          <button class="card-btn" onclick="scrollToForm('bottom-form')">Book a Showing →</button>
+        </div>
+      </div>
+
+      <!-- Park -->
+      <div class="collection-card">
+        <div class="collection-header park">
+          <div class="collection-dot"></div>
+          <div class="collection-name">Park Collection</div>
+          <div class="collection-type">2 &amp; 3 Storey</div>
+          <div class="collection-from">$705,990 <span>2-Storey from · HST in</span></div>
+        </div>
+        <div class="collection-body">
+          <p class="collection-detail"><strong>Blocks 116 &amp; 108</strong> · Closing Jul–Aug 2027 · 1,240–2,599 sq ft</p>
+          <ul class="collection-features">
+            <li>Your choice: 2-Storey or 3-Storey layout</li>
+            <li>9' ceilings ground &amp; second floor</li>
+            <li>8 models · All 3 Bed · 2.5 Bath</li>
+            <li>Full garages · traditional family layout</li>
+            <li>Largest units up to 2,599 sq ft</li>
+          </ul>
+          <button class="card-btn" onclick="scrollToForm('bottom-form')">Book a Showing →</button>
+        </div>
+      </div>
+
+      <!-- River -->
+      <div class="collection-card">
+        <div class="collection-header river">
+          <div class="collection-dot"></div>
+          <div class="collection-name">River Collection</div>
+          <div class="collection-type">Promenade Homes</div>
+          <div class="collection-from">$719,990 <span>Starting price · HST in</span></div>
+        </div>
+        <div class="collection-body">
+          <p class="collection-detail"><strong>Block 130</strong> · Closing July 2027 · 1,455–1,909 sq ft</p>
+          <ul class="collection-features">
+            <li>Optional in-law suite on ground level</li>
+            <li>9' second-floor ceilings</li>
+            <li>3 models · ideal for multi-generational families</li>
+            <li>Separate living levels for privacy</li>
+            <li>End units available</li>
+          </ul>
+          <button class="card-btn" onclick="scrollToForm('bottom-form')">Book a Showing →</button>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     STANDARD FEATURES STRIP
+============================================================ -->
+<div class="features-strip">
+  <div class="container">
+    <div class="section-eyebrow" style="margin-bottom:10px;">Included in Every Home</div>
+    <h2 class="section-title" style="margin-bottom:36px;">Premium Finishes as Standard</h2>
+    <div class="features-grid">
+      <div class="feature-item">
+        <div class="feature-icon">🍳</div>
+        <div class="feature-title">Chef's Kitchen</div>
+        <div class="feature-desc">Quartz or granite countertop, undermount sink, extended upper cabinets</div>
+      </div>
+      <div class="feature-item">
+        <div class="feature-icon">🔥</div>
+        <div class="feature-title">Linear Fireplace</div>
+        <div class="feature-desc">Electric linear fireplace where shown on plan — a signature feature</div>
+      </div>
+      <div class="feature-item">
+        <div class="feature-icon">🪵</div>
+        <div class="feature-title">Hardwood Floors</div>
+        <div class="feature-desc">Natural-finish hardwood on all main living levels — no carpet</div>
+      </div>
+      <div class="feature-item">
+        <div class="feature-icon">🏠</div>
+        <div class="feature-title">9' Ceilings</div>
+        <div class="feature-desc">Generous ceiling heights throughout main living areas</div>
+      </div>
+      <div class="feature-item">
+        <div class="feature-icon">🔌</div>
+        <div class="feature-title">USB Charging</div>
+        <div class="feature-desc">Integrated USB charger outlets in kitchen &amp; primary bedroom</div>
+      </div>
+      <div class="feature-item">
+        <div class="feature-icon">🚿</div>
+        <div class="feature-title">Modern Bathrooms</div>
+        <div class="feature-desc">Upgraded chrome faucets, contemporary 2-panel smooth doors</div>
+      </div>
+      <div class="feature-item">
+        <div class="feature-icon">🌬️</div>
+        <div class="feature-title">HRV System</div>
+        <div class="feature-desc">Continuous fresh air circulation for a healthy indoor environment</div>
+      </div>
+      <div class="feature-item">
+        <div class="feature-icon">🍽️</div>
+        <div class="feature-title">4 Appliances Free</div>
+        <div class="feature-desc">Limited-time: Fridge, Stove, Dishwasher &amp; Microwave included</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ============================================================
+     INTERIOR ROOMS
+============================================================ -->
+<section class="interior-section" id="interiors">
+  <div class="container">
+    <div class="section-eyebrow">Interior Finishes</div>
+    <h2 class="section-title">Crafted for Modern Living</h2>
+    <p class="section-desc">Every room designed with intent — from the kitchen island to the spa bathroom.</p>
+    <div class="rooms-grid">
+      <div class="room-card">
+        <div class="room-placeholder living">🛋️</div>
+        <div class="room-label">
+          <strong>Living Room</strong>
+          <span>Electric linear fireplace · Hardwood floors · 9' ceilings</span>
+        </div>
+      </div>
+      <div class="room-card">
+        <div class="room-placeholder kitchen">🍳</div>
+        <div class="room-label">
+          <strong>Chef's Kitchen</strong>
+          <span>Quartz island · Extended upper cabinets · Pull-out faucet</span>
+        </div>
+      </div>
+      <div class="room-card">
+        <div class="room-placeholder bath">🛁</div>
+        <div class="room-label">
+          <strong>Spa Bathroom</strong>
+          <span>Contemporary fixtures · Premium tilework · Ample storage</span>
+        </div>
+      </div>
+      <div class="room-card">
+        <div class="room-placeholder bedroom">🛏️</div>
+        <div class="room-label">
+          <strong>Primary Bedroom</strong>
+          <span>USB charging built-in · Natural light · Large windows</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     DEPOSIT SCHEDULE + WHY BUY NOW
+============================================================ -->
+<section class="deposit-section" id="deposit">
+  <div class="container">
+    <div class="deposit-inner">
+      <div>
+        <div class="section-eyebrow">Low Deposit Structure</div>
+        <h2 class="section-title">Easy Path to Ownership</h2>
+        <p class="section-desc" style="margin-bottom:0;">Spread across 4 months — designed to be manageable.</p>
+        <div class="deposit-steps">
+          <div class="deposit-step">
+            <div class="step-num">1</div>
+            <div class="step-body">
+              <strong>$5,000 with offer</strong>
+              <span>Credit card or bank draft — secures your lot</span>
+            </div>
+          </div>
+          <div class="deposit-step">
+            <div class="step-num">2</div>
+            <div class="step-body">
+              <strong>$15,000 in 1 month</strong>
+              <span>Cheque payable to Sundial Homes (4th Line) Limited</span>
+            </div>
+          </div>
+          <div class="deposit-step">
+            <div class="step-num">3</div>
+            <div class="step-body">
+              <strong>$15,000–$20,000 in 2 months</strong>
+              <span>Balance to be confirmed at signing</span>
+            </div>
+          </div>
+          <div class="deposit-step">
+            <div class="step-num">4</div>
+            <div class="step-body">
+              <strong>$20,000 in 3 months</strong>
+              <span></span>
+            </div>
+          </div>
+          <div class="deposit-step">
+            <div class="step-num">5</div>
+            <div class="step-body">
+              <strong>$15,000–$20,000 in 4 months</strong>
+              <span>Final deposit — exact schedule confirmed at signing</span>
+            </div>
+          </div>
+        </div>
+        <p class="deposit-note">Cheques payable to: Sundial Homes (4th Line) Limited. Exact schedule confirmed at signing.</p>
+      </div>
+      <div class="why-box">
+        <div class="why-title">Why Buy at The Enclave Now?</div>
+        <div class="why-item">
+          <div class="why-icon">🔒</div>
+          <div>
+            <strong>Lock in Today's Price</strong>
+            <span>Pre-construction pricing is at its lowest point. Every release sees a price increase.</span>
+          </div>
+        </div>
+        <div class="why-item">
+          <div class="why-icon">🌳</div>
+          <div>
+            <strong>Master-Planned Community</strong>
+            <span>Tree-lined streets, Village Green Park, scenic pond — a neighbourhood built for families.</span>
+          </div>
+        </div>
+        <div class="why-item">
+          <div class="why-icon">🏫</div>
+          <div>
+            <strong>Future School &amp; Childcare On-Site</strong>
+            <span>Planned elementary school and childcare within the community.</span>
+          </div>
+        </div>
+        <div class="why-item">
+          <div class="why-icon">🛣️</div>
+          <div>
+            <strong>Excellent Connectivity</strong>
+            <span>James Snow Pkwy, 4th Line, Trudeau Drive &amp; Hwy 401 access nearby.</span>
+          </div>
+        </div>
+        <div class="why-item">
+          <div class="why-icon">📄</div>
+          <div>
+            <strong>No Condo Fees — Ever</strong>
+            <span>You own the land. No strata, no maintenance fees, no board — just your home.</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     LOCATION
+============================================================ -->
+<section class="location-section" id="location">
+  <div class="container">
+    <div class="location-inner">
+      <div>
+        <div class="section-eyebrow">Milton, Ontario</div>
+        <h2 class="section-title">A Prime Address in a Growing City</h2>
+        <p class="section-desc" style="margin-bottom:0;">Milton is one of Canada's fastest-growing communities — with all the amenities of a large city and the feel of a close-knit town.</p>
+        <ul class="location-list">
+          <li>
+            <span class="loc-icon">🛣️</span>
+            <div class="loc-label">
+              <strong>Highway 401 Access</strong>
+              <span>Quick connection to Toronto, Mississauga &amp; the GTA</span>
+            </div>
+          </li>
+          <li>
+            <span class="loc-icon">🏥</span>
+            <div class="loc-label">
+              <strong>Hospitals &amp; Health Centres Nearby</strong>
+              <span>Milton District Hospital and multiple medical offices</span>
+            </div>
+          </li>
+          <li>
+            <span class="loc-icon">🛒</span>
+            <div class="loc-label">
+              <strong>Shopping &amp; Dining</strong>
+              <span>Milton Mall, restaurants, grocery stores minutes away</span>
+            </div>
+          </li>
+          <li>
+            <span class="loc-icon">🏫</span>
+            <div class="loc-label">
+              <strong>Top-Rated Schools</strong>
+              <span>HWDSB &amp; HCDSB schools throughout Milton</span>
+            </div>
+          </li>
+          <li>
+            <span class="loc-icon">🌿</span>
+            <div class="loc-label">
+              <strong>Nature &amp; Trails</strong>
+              <span>Rattlesnake Point, Crawford Lake, Niagara Escarpment nearby</span>
+            </div>
+          </li>
+        </ul>
+      </div>
+      <div class="location-map">
+        <div class="location-map-icon">📍</div>
+        <strong>The Enclave, Milton, ON</strong>
+        <p>Near 4th Line &amp; James Snow Pkwy<br>Milton, Ontario</p>
+        <a href="https://maps.google.com/?q=Milton,Ontario,Canada" target="_blank" rel="noopener">Open in Google Maps →</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     BOTTOM BOOKING FORM
+============================================================ -->
+<section class="bottom-form-section" id="bottom-form">
+  <div class="container bottom-form-inner">
+    <div class="bottom-form-left">
+      <div class="section-eyebrow" style="color:#F4A67A;">Act Before Prices Increase</div>
+      <h2 class="section-title">Book Your Private<br>Showing Today</h2>
+      <p class="section-desc">No pressure. No obligation. Just a personal walkthrough of the plans, pricing, and available lots — before the next release.</p>
+      <div class="urgency-badges">
+        <div class="urgency-badge">
+          <span class="urgency-badge-icon">⏰</span>
+          <div>
+            <strong>Closings Start July 2027</strong>
+            <span>River &amp; Park collections close first — limited lots remaining</span>
+          </div>
+        </div>
+        <div class="urgency-badge">
+          <span class="urgency-badge-icon">💰</span>
+          <div>
+            <strong>Prices Increase Each Release</strong>
+            <span>Today's price is the lowest you'll see — lock it in now</span>
+          </div>
+        </div>
+        <div class="urgency-badge">
+          <span class="urgency-badge-icon">🏡</span>
+          <div>
+            <strong>We Represent You, Not the Builder</strong>
+            <span>Our advice is independent — your interests come first, always</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="bottom-form-card">
+      <div class="form-card-title">Get In Touch</div>
+      <p class="form-card-sub" style="margin-bottom:20px;">Fill in your details and Ankur will call you personally.</p>
+
+      <div id="bottomFormWrap">
+        <form id="bottomBookingForm" onsubmit="submitForm(event, 'bottomBookingForm', 'bottomSuccess', 'bottomError')">
+          <div class="form-group">
+            <label for="b_name">Full Name *</label>
+            <input type="text" id="b_name" name="name" placeholder="Your full name" required autocomplete="name">
+          </div>
+          <div class="form-group">
+            <label for="b_email">Email Address *</label>
+            <input type="email" id="b_email" name="email" placeholder="you@email.com" required autocomplete="email">
+          </div>
+          <div class="form-group">
+            <label for="b_phone">Phone Number *</label>
+            <input type="tel" id="b_phone" name="phone" placeholder="416-000-0000" required autocomplete="tel">
+          </div>
+          <div class="form-group">
+            <label for="b_collection">Interested In</label>
+            <select id="b_collection" name="collection">
+              <option value="">— Select a Collection —</option>
+              <option>Village Collection (from $599,990)</option>
+              <option>Park Collection — 2-Storey (from $705,990)</option>
+              <option>Park Collection — 3-Storey (from $779,990)</option>
+              <option>River Collection (from $719,990)</option>
+              <option>Not Sure Yet — Show Me Everything</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="b_message">Message (Optional)</label>
+            <input type="text" id="b_message" name="message" placeholder="Any questions or preferred times?">
+          </div>
+          <button type="submit" class="submit-btn" id="bottomBtn">Send My Request →</button>
+          <p class="form-privacy">Your info is kept confidential. No spam, ever.</p>
+          <div class="form-error-msg" id="bottomError">Something went wrong. Please call 416-560-2182 directly.</div>
+        </form>
+        <div class="form-success" id="bottomSuccess">
+          <div class="check">✅</div>
+          <h3>Request received!</h3>
+          <p>Ankur will be in touch shortly to book your private showing.</p>
+          <p style="margin-top:10px; font-weight:600; color:#C0392B; font-size:16px;">416-560-2182</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     AGENT
+============================================================ -->
+<section class="agent-section">
+  <div class="container">
+    <div class="agent-card">
+      <div class="agent-avatar">AJ</div>
+      <div class="agent-info">
+        <div class="agent-name">Ankur Jha</div>
+        <div class="agent-title">Real Estate Sales Representative · Milton &amp; GTA</div>
+        <div class="agent-contacts">
+          <a href="tel:4165602182" class="agent-contact">📞 416-560-2182</a>
+        </div>
+      </div>
+      <button class="agent-cta" onclick="scrollToForm('bottom-form')">Book a Showing</button>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     DISCLAIMER
+============================================================ -->
+<div class="disclaimer">
+  <p>
+    We do not represent the Builder — we represent you. All Renderings, Incentives, Pricing are Subject to Terms &amp; Conditions and may Change at anytime without notice – See Sales Representative for more details. Not Intended to Solicit those under contract with another brokerage. Additional terms may apply. Prices, sizes, lots and availability are as of document preparation and subject to change without notice. All dimensions are approximate. Renderings and floor plans are artist's concept. H.S.T. included where indicated. The Agreement of Purchase &amp; Sale prevails in the event of any conflict. E. &amp; O.E.
+  </p>
+</div>
+
+<!-- ============================================================
+     FOOTER
+============================================================ -->
+<footer>
+  <div class="container">
+    <p><strong>The Enclave — Milton, Ontario</strong> &nbsp;|&nbsp; Presented by <strong>Ankur Jha</strong> &nbsp;|&nbsp; <a href="tel:4165602182" style="color:#F4A67A;">416-560-2182</a></p>
+    <p style="margin-top:6px; font-size:11px; opacity:0.5;">© 2026 · All rights reserved</p>
+  </div>
+</footer>
+
+<!-- FLOATING BUTTON -->
+<button class="float-btn" onclick="scrollToForm('bottom-form')">
+  📅 <span>Book a Showing</span>
+</button>
+
+<!-- ============================================================
+     JAVASCRIPT — GOOGLE SHEETS INTEGRATION
+============================================================ -->
+<script>
+/*
+  ================================================================
+  HOW TO CONNECT YOUR GOOGLE SHEET (3 simple steps):
+  ================================================================
+
+  STEP 1 — Create your Google Sheet:
+    • Go to sheets.google.com → New spreadsheet
+    • Add these column headers in Row 1:
+      Timestamp | Name | Email | Phone | Collection | Message | Source
+
+  STEP 2 — Set up Google Apps Script:
+    • In your sheet: Extensions → Apps Script
+    • Paste the following code in the editor (see APPS_SCRIPT_CODE below)
+    • Click Save, then Deploy → New deployment
+    • Type: Web App
+    • Execute as: Me
+    • Who has access: Anyone
+    • Click Deploy, copy the Web App URL
+
+  STEP 3 — Paste your URL below:
+    • Replace YOUR_GOOGLE_APPS_SCRIPT_URL with your deployment URL
+
+  ================================================================
+  APPS SCRIPT CODE (paste this in your Google Apps Script editor):
+  ================================================================
+
+  function doPost(e) {
+    var sheet = SpreadsheetApp.getActiveSpreadsheet().getActiveSheet();
+    var data = JSON.parse(e.postData.contents);
+    sheet.appendRow([
+      new Date(),
+      data.name || '',
+      data.email || '',
+      data.phone || '',
+      data.collection || '',
+      data.message || '',
+      data.source || 'Landing Page'
+    ]);
+    return ContentService
+      .createTextOutput(JSON.stringify({ result: 'success' }))
+      .setMimeType(ContentService.MimeType.JSON);
+  }
+
+  ================================================================
+*/
+
+  // ▼▼▼ PASTE YOUR GOOGLE APPS SCRIPT URL HERE ▼▼▼
+  var GOOGLE_SHEET_URL = 'YOUR_GOOGLE_APPS_SCRIPT_URL';
+  // ▲▲▲ PASTE YOUR GOOGLE APPS SCRIPT URL HERE ▲▲▲
+
+
+  function submitForm(event, formId, successId, errorId) {
+    event.preventDefault();
+
+    var form    = document.getElementById(formId);
+    var success = document.getElementById(successId);
+    var error   = document.getElementById(errorId);
+    var btn     = form.querySelector('.submit-btn');
+
+    // Hide any previous error
+    error.style.display = 'none';
+
+    // Collect form data
+    var data = {
+      name:       form.querySelector('[name="name"]').value.trim(),
+      email:      form.querySelector('[name="email"]').value.trim(),
+      phone:      form.querySelector('[name="phone"]').value.trim(),
+      collection: (form.querySelector('[name="collection"]') || {}).value || '',
+      message:    (form.querySelector('[name="message"]') || {}).value || '',
+      source:     'The Enclave Landing Page'
+    };
+
+    // Basic validation
+    if (!data.name || !data.email || !data.phone) {
+      error.textContent = 'Please fill in your name, email, and phone number.';
+      error.style.display = 'block';
+      return;
+    }
+
+    // Show loading state
+    btn.disabled = true;
+    btn.textContent = 'Sending...';
+
+    // Check if URL is configured
+    if (!GOOGLE_SHEET_URL || GOOGLE_SHEET_URL === 'YOUR_GOOGLE_APPS_SCRIPT_URL') {
+      // Demo mode — show success without actually submitting
+      console.log('Form data (demo mode — add your Google Sheet URL to activate):', data);
+      setTimeout(function() {
+        form.style.display = 'none';
+        success.style.display = 'block';
+      }, 800);
+      return;
+    }
+
+    // Submit to Google Sheets
+    fetch(GOOGLE_SHEET_URL, {
+      method: 'POST',
+      mode:   'no-cors',
+      headers: { 'Content-Type': 'application/json' },
+      body:   JSON.stringify(data)
+    })
+    .then(function() {
+      // no-cors means we can't read the response, but if no error = success
+      form.style.display = 'none';
+      success.style.display = 'block';
+    })
+    .catch(function(err) {
+      console.error('Submission error:', err);
+      btn.disabled = false;
+      btn.textContent = 'Send My Request →';
+      error.textContent = 'Could not connect. Please call 416-560-2182 directly.';
+      error.style.display = 'block';
+    });
+  }
+
+  function scrollToForm(id) {
+    var el = document.getElementById(id);
+    if (el) {
+      el.scrollIntoView({ behavior: 'smooth', block: 'center' });
+      // Focus first input after scroll
+      setTimeout(function() {
+        var input = el.querySelector('input');
+        if (input) input.focus();
+      }, 600);
+    }
+  }
+
+  // Smooth fade-in on scroll
+  var observer = new IntersectionObserver(function(entries) {
+    entries.forEach(function(e) {
+      if (e.isIntersecting) {
+        e.target.style.opacity = '1';
+        e.target.style.transform = 'translateY(0)';
+      }
+    });
+  }, { threshold: 0.1 });
+
+  document.querySelectorAll('.collection-card, .feature-item, .deposit-step, .why-item').forEach(function(el) {
+    el.style.opacity = '0';
+    el.style.transform = 'translateY(20px)';
+    el.style.transition = 'opacity 0.5s ease, transform 0.5s ease';
+    observer.observe(el);
+  });
+</script>
+
+</body>
+</html>
